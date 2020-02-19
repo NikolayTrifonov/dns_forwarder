@@ -1,0 +1,6 @@
+Client:
+dig @127.0.0.1 -p 1917 -4 hs.fi
+
+Server / DNS Forwarder:
+cd ~/work-space-2019/local/Eclipse/C++/dns_forwarder/Release
+./dns_forwarder -v 62.241.198.245 53

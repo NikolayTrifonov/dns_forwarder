@@ -1,0 +1,18 @@
+C++ DNS forwarder that listens for UDP port and sends incoming requests to an internet server.
+Internet server’s replies are forwarded to the relevant dns client.
+
+1. Implemented using language C++11/14.
+
+2. Can be compiled and executed gracefully on Debian.
+
+3. Uses IPv4.
+
+4. Listening socket is fixed to 127.0.0.1:1917.
+
+USAGE:
+	Client:
+	dig @127.0.0.1 -p 1917 -4 hs.fi
+	
+	Server / DNS Forwarder:
+	cd ~/work-space-2019/local/Eclipse/C++/dns_forwarder/Release
+	./dns_forwarder -v 62.241.198.245 53

@@ -1,0 +1,24 @@
+1. Folder name
+Folder name starts with small letter and uses "camelCase".
+REASON: We can easily distinguish own/our folders from Eclipse's folders.
+
+2. File name
+File name is the same as the class name. File name follows "CamelCase".
+REASON: Such approach gives a possibility to get a class name automatically
+		from file name __builtin_FILE(). See Log::getClassName().
+
+3. Class name
+Class name follows "CamelCase" notation.
+
+4. Method name
+Method name follows "camelCase" notation.
+
+5. Member name
+Member name follows "camelCase" notation.
+
+6. Constant name
+Constant name follows "CONSTANT_NAME" notation.
+
+7. #ifndef/#define
+#ifndef CLASS_NAME_H
+#define CLASS_NAME_H

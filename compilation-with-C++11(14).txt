@@ -1,0 +1,43 @@
+2. COMPILATION
+
+2.1. Compilation with C++11/14 in Eclipse
+
+2.1.1. Support&compilation for C++11
+
+2.1.1.1. Using "Dialect" in "Tool Settings"
+In Eclipse, go to menu item Project -> Properties.
+In C/C++ Build -> Settings, set/configure the relevant configuration.
+Click on C/C++ build -> Settings -> Tool Settings tab -> Dialect.
+Select language standard ISO C++11 (-std=c++0x).
+Press Apply button and rebuild.
+
+2.1.1.2. Using "Other flags" build
+In Eclipse, go to menu item Project -> Properties.
+In C/C++ Build -> Settings, set/configure the relevant configuration.
+Click on C/C++ build -> Settings -> Tool Settings tab -> Miscellaneous.
+Copy to "Other flags" field build -std=c++11 or -std=gnu++11.
+Press Apply button and rebuild.
+
+2.1.2. Support&compilation for C++14 in Eclipse
+
+2.1.2.1. Using "Dialect" in "Tool Settings"
+In Eclipse, go to menu item Project -> Properties.
+In C/C++ Build -> Settings, set/configure the relevant configuration.
+Click on C/C++ build -> Settings -> Tool Settings tab -> Dialect.
+Select language standard ISO C++1y (-std=c++1y).
+Press Apply button and rebuild.
+
+2.1.2.2. Using "Other flags" build
+In Eclipse, go to menu item Project -> Properties.
+In C/C++ Build -> Settings, set/configure the relevant configuration.
+Click on C/C++ build -> Settings -> Tool Settings tab -> Miscellaneous.
+Copy to "Other flags" field build -std=c++14 or -std=gnu++14.
+Press Apply button and rebuild.
+
+At the moment, current build configuration, both Release and Debug,
+use -std=gnu++14 compilation flag. 
+
+2.2. Compilation with C++14 in terminal
+cd dns_forwarder/Release
+make clean
+make all
